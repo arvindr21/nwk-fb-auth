@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>wean</title>
+      <link rel="stylesheet" href="css/bootstrap.css">
+      <link rel="stylesheet" href="css/app.css">
+      <script type="text/javascript" src="lib/firebase.js"></script>
+      <script type="text/javascript" src="lib/firebase-simple-login.js"></script>
+      <script type="text/javascript" src="lib/jquery.min.js"></script>
+      <script type="text/javascript" src="lib/bootstrap.min.js"></script>
+      <script src="js/app.js"></script>
+   </head>
+   <body>
+      <div class="container">
+         <div class="header">
+            <div class="btn-group pull-right">
+               <button onclick="minimize()" type="button" class="btn btn-default btn-xs">
+               <span class="glyphicon glyphicon-minus"></span>
+               </button>
+               <button onclick="toggleFullscreen()" type="button" class="btn btn-default btn-xs">
+               <span class="glyphicon glyphicon-fullscreen"></span>
+               </button>
+               <button onclick="closeWindow()" type="button" class="btn btn-default btn-xs">
+               <span class="glyphicon glyphicon-remove"></span>
+               </button>
+            </div>
+            <h1>js-auth</h1>
+            <hr/>
+         </div>
+         <h2 class="text-center">
+         Welcome <span id="email">...</span>
+         </h2>
+         <br/>
+         <div class="text-center">
+            <a href="#" class="btn btn-md btn-warning" onclick="logout()">Logout</a>
+         </div>
+      </div>
+   </body>
+</html>
